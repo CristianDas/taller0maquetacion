@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <title>Taller 0 Maquetación Responsive</title>
+</head>
+<body>
+   
+    <nav>
+       
+        <div class="menu">
+            <a href="index.html" class="item">inicio</a>
+            <a href="ubicanos.html" class="item">Ubícanos</a>
+            <a href="opiniones.html" class="item">Opiniones</a>
+            <hr class="menu-hr" noshade="">
+            <a href="#" class="item">
+                <button class="navbar-button">
+                    <i class="fa-solid fa-user"></i> Iniciar Sesión
+                </button>
+            </a>
+        </div>
+    </nav>
+     <div class="logo">
+            <img src="img/Hotelia horizontal blanco.svg">
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+        </div>
+         <div class="slider">
+        <div class="slides">
+            <img src="img/slide1.jpg" alt="Slide 1">
+            <img src="img/slide2.png" alt="Slide 2">
+        </div>
+        <script src="js/slider.js"></script>
+    </div>
+    <div id="container">
+        <section id="banner"></section>
+        
+        <section id="descripcion">
+            <p>
+                Estamos ubicados en el barrio La Cabrera al norte de Bogotá, en un contexto de lujo donde interactúan los negocios, el ocio y el descanso, gracias a su estratégica ubicación rodeada de bancos, restaurantes de alta cocina, centros comerciales, almacenes de lujo y emblemáticos parques para aprovechar la naturaleza entre la ciudad caminay y hacer un poco de deporte al aire libre están el parque del Virrey y El Parque de la 93. Además de nuestro exclusivo diseño, ponemos a tu disposición una oferta gastronómica tan sofisticada como saludable a base de productos locales, cargados de lo mejor de la tradición colombiana.
+            </p>
+            <img src="img/Hotelia negro vertical.svg" alt="Logo Hotelia" class="descripcion-logo"/>
+        </section>
+        <div class="ubicanos">
+        <h2>Ubícanos</h2></div><br> 
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="820" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=estacion+las+nieves&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://textcaseconvert.com/"></a><br><a href=""></a><br><style>.mapouter{position: relative;text-align: right;height: 100%;width: 100%;}</style><style>.gmap_canvas{overflow: hidden;background: none !important;height: 100%;width: 100%;}</style></div></div>
+        </div><br><br> <br>
+
+        <div class="direccion">
+
+         <h2>AVENIDA CARRERA 8,#12A-42,BOGOTA DC <BR>COLOMBIA</h2> 
+            </div>
+            <div class="raya"><h3>_______________________________________</h3> </div>    
+            <br>
+
+            <div class="direccion">
+                <h2>+31454545</h2>
+            </div>
+            <br>
+               <section id="features">
+            <h2 class="features-title">Razones por las que disfrutarás quedarte con nosotros</h2>
+            <div class="features-description">
+                <div class="feature feature-blue">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="feature feature-black">
+                    <i class="fa-solid fa-bed"></i>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="feature feature-blue">
+                    <i class="fa-solid fa-wifi"></i>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="feature feature-black">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ubicacion"></section>
+        <section id="opinion"></section>
+        <footer></footer>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

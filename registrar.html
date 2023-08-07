@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="css/registrar.css">
+</head>
+<body>
+
+<h1><span class="title-img">F</span>otelia<br>Un lugar en tu corazon</h1>
+    <div class="container">
+        <form>
+            <h2>Registrate</h2>
+            <label for="tipo-documento">Tipo de documento:</label>
+            <select id="tipo-documento" name="tipo-documento" required>
+                <option value="cedula">Cédula</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="tarjeta-identidad">Tarjeta de identidad</option>
+            </select>
+
+            <label for="numero-documento">Número de documento:</label>
+            <input type="text" id="numero-documento" name="numero-documento" required>
+
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+            <label>Genero:</label>
+            <label for="genero-masculino"><input type="radio" id="genero-masculino" name="genero" value="masculino" required> Masculino</label>
+            <label for="genero-femenino"><input type="radio" id="genero-femenino" name="genero" value="femenino" required> Femenino</label>
+            <label for="genero-otro"><input type="radio" id="genero-otro" name="genero" value="otro" required> Otro</label>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Contacto de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="pais">País de origen:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <label for="foto">foto:</label>
+            <input type="file" id="foto" name="foto">
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+<label>
+                <input type="checkbox" id="acepto-terminos" name="acepto-terminos" required>
+                Acepto términos y condiciones
+            </label>
+            <button type="submit">ingresar</button>
+
+            
+        </form>
+    </div>
+</body>
+</html>
